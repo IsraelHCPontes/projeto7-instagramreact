@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #E5E5E5;
+  }
+  
+  .topo{
+    background-color: #FFFFFF;
+    height: 54px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+  
+  }
+  
+  .topo input{
+    height: 28px;
+    width: 215px;
+    left: 575px;
+    top: 13px;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+  
+  }
+  
+  .topo input::placeholder{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .topoEsquerda{
+    width: 155px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .topoDireita{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 88px;
+  }
+  
+  .containerStory{
+    height: 118px;
+    width: 614px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    display: flex;
+    overflow: scroll hidden ;
+  
+  }
+  
+  .story {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px 0;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .story .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 66px;
+    width: 66px;
+    background-image: url('./arquivosulteis/img/story-circle.svg')
+  }
+  
+  .story .imagem img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+  }
+  
+  .postFeed{
+    height: 760px;
+    width: 614px;
+    border-radius: 3px;
+    margin-top: 24px;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+  }
+  
+  .topoPost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+  
+  .topoPost img:nth-child(1){
+    width: 32px;
+    margin-top: 15px;
+  }
+  
+  .topoPost h3{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  
+  }
+  
+  .topoPost img:nth-child(2){
+    margin-top: 15px;
+  }
+  
+  .usuario{
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .imgPost {
+    margin-top: 13px;
+    width: 100%;
+    height: 100;
+  }
+  
+  .interacaoPost{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-top: 12px;
+  }
+  
+  .intercaoPostEsquerda{
+    width: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .curtidasPost{
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+  }
+  
+  .curtidasPost img{
+    width: 20px;
+    height: 20px;
+    margin-left: 17px;
+   
+  }
+  .curtidasPost h3{
+    margin-left: 5px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  
+  }
+  
+  span{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .sideBar{
+    margin-left: 30px;
+  }
+  
+  .topoSideBar{
+    width: 300px;
+    height: 118px;
+    display: flex;
+    align-items: center;
+  }
+  .topoSideBar img{
+    width: 56px;
+    height: 56px;
+  }
+  
+  .textoConta{
+    margin-left: 17px;
+  }
+  
+  .textoConta h3{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .textoConta h4{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .topoSugestoes{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .topoSugestoes h4{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8E8E8E;
+  }
+  
+  .topoSugestoes h3{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
+  }
+  
+  .contasSusgetoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+  }
+  
+  .sugestao{
+    display: flex;
+  }
+  
+  .textSugestao{
+    margin-left: 11px;
+  }
+  
+  .textSugestao h3{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  } 
+  
+  .textSugestao h4{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8E8E8E;
+  } 
+  
+  .contasSusgetoes > h3{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #139EF2;
+  }
+  
+  .sideBar > h4 {
+    margin-top: 33px;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #C7C7C7;
+  }
+  
+  .sideBar > h5{
+    margin-top: 18px;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #C7C7C7;
+  }
+  
+  @media (max-width: 935px) {
+    .sidebar {
+      display: none;
+    }
+    .objetostop {
+      width: 100%;
+      margin-left: 18px;
+      margin-right: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 614px) {
+    .top {
+      display: none;
+    }
+    .top_mobile {
+      margin-top: 0;
+      display: initial;
+      background-color: #ffffff;
+      border-bottom: 2px solid #dbdbdb;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .seta {
+      display: none;
+    }
+  }
+  
