@@ -21,6 +21,11 @@
     z-index: 1;
   
   }
+
+  .topo ion-icon{
+    width: 23.5px;
+    height: 23.5px;
+   }
   
   .topo input{
     height: 28px;
@@ -97,6 +102,15 @@
     height: 56px;
     border-radius: 50%;
   }
+
+  .story h3 {
+    width: 66px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    height: 14px;
+    margin-top: 6px
+  }
   
   .postFeed{
     height: 760px;
@@ -137,7 +151,7 @@
   }
   
   .usuario{
-     display: flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
   }
