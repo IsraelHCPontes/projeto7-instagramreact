@@ -1,7 +1,7 @@
 import Contas from "./Contas";
 
 export default function Post(){
-    return Contas.filter(Contas.post !== undefined).map(props => 
+    return Contas.filter(props => props.post).map(props => 
         <div class="containerFeed">
             <div class="postFeed">
                 <div class="topoPost">
