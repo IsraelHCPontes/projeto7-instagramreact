@@ -2,7 +2,7 @@ import Contas from "../data/Contas";
 
 function TopoSugestoes(){
     return Contas.filter(props => props.status == "Catana").map(props => 
-    <div class="topoSideBar">
+<div class="topoSideBar">
     <img src={props.imagem}alt=""/>
     <div class="textoConta">  
         <h3>{props.nome}</h3>
