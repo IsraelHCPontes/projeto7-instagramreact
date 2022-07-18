@@ -1,4 +1,4 @@
-import Contas from "./Contas";
+import Contas from "../data/Contas";
 
 export default function StoryTemplate(){
     return Contas.map(props => 

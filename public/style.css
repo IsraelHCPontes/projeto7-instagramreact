@@ -4,7 +4,7 @@
   
   body {
     font-family: "Roboto", sans-serif;
-    background-color: #E5E5E5;
+    background-color: #FAFAFA
   }
   
   .topo{
@@ -211,10 +211,10 @@
   
   .sideBar{
     margin-left: 30px;
+    width: 300px;
   }
   
   .topoSideBar{
-    width: 300px;
     height: 118px;
     display: flex;
     align-items: center;

@@ -1,4 +1,4 @@
-import Contas from "./Contas";
+import Contas from "../data/Contas";
 
 export default function Post(){
     return Contas.filter(props => props.post).map(props => 

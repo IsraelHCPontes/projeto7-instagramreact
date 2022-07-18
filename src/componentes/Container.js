@@ -1,5 +1,6 @@
 import Stories from "./Stories"
 import Post from "./Posts"
+import SidBar from "./SideBar"
 
 export default function Container(){
      return (
@@ -8,6 +9,9 @@ export default function Container(){
                <Stories/>
                <Post/>
           </div>
+        <div class="sideBar">
+          <SidBar/>
+        </div>
      </div>     
      )        
 }
