@@ -360,6 +360,32 @@
     display: none;
 }
 
+
+.intercaoPostEsquerda ion-icon{
+  width: 23px;
+  height: 23px;
+}
+
+.intercaoPostEsquerda .like{
+  
+}
+
+.like{
+  
+}
+
+.curtido{
+  color: red;
+}
+
+
+.fundo-mobile{
+  display: none;
+}
+
+ion-icon{
+  visibility: visible;
+}
   
   @media (max-width: 935px) {
     .sideBar {
@@ -375,9 +401,7 @@
     .container {
       margin-top: 55px;
     }
-    .iom-inner{
-      display: none;
-    }
+  
 
   
     .topo{

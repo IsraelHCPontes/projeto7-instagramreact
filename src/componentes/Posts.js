@@ -1,6 +1,11 @@
+import React from "react";
 import Contas from "../data/Contas";
 
+
+
 export default function Post(){
+    const[corBotao, setCorBotao] = React.useState("like")
+    
     return Contas.filter(props => props.post).map(props => 
         <div class="containerFeed">
             <div class="postFeed">
@@ -11,12 +16,22 @@ export default function Post(){
                     </div> 
                     <img src="./arquivosulteis/img/ellipsis-horizontal 1.svg" alt=""/>
                 </div>
-            <img class="imgPost" src={props.post}alt=""/>
+            <img class="imgPost" src={props.post} className={corBotao} onClick={() => {
+                            if(corBotao ==="like"){
+                             setCorBotao('curtido') 
+                            }else{
+                                setCorBotao('like')
+                            }}}/>
             <div class="interacaoPost">
                     <div class="intercaoPostEsquerda">
-                        <img src="./arquivosulteis/img/heart-outline 1.png" alt=""/>
-                        <img src="./arquivosulteis/img/Vector.svg" alt=""/>
-                        <img src="./arquivosulteis/img/paper-plane-outline 1.png" alt=""/>
+                        <ion-icon  class={corBotao} onClick={() => {
+                            if(corBotao ==="like"){
+                             setCorBotao('curtido') 
+                            }else{
+                                setCorBotao('like')
+                            }}} name={corBotao =="like" ? "heart-outline":"heart"}></ion-icon>
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                        <ion-icon  name="paper-plane-outline"></ion-icon>
                     </div>
                     <img src="./arquivosulteis/img/etiqueta.svg" alt=""/>
             </div>
@@ -28,3 +43,6 @@ export default function Post(){
         </div> 
         );
 };
+
+
+
