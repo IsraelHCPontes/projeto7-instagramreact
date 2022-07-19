@@ -3,10 +3,11 @@ import Contas from "../data/Contas";
 
 
 
-export default function Post(){
-    const[corBotao, setCorBotao] = React.useState("like")
+function Post(props){
+
+    const [corbotao, setCorbotao] = React.useState("like");
     
-    return Contas.filter(props => props.post).map(props => 
+    return (
         <div class="containerFeed">
             <div class="postFeed">
                 <div class="topoPost">
@@ -16,20 +17,10 @@ export default function Post(){
                     </div> 
                     <img src="./arquivosulteis/img/ellipsis-horizontal 1.svg" alt=""/>
                 </div>
-            <img class="imgPost" src={props.post} className={corBotao} onClick={() => {
-                            if(corBotao ==="like"){
-                             setCorBotao('curtido') 
-                            }else{
-                                setCorBotao('like')
-                            }}}/>
+            <img class="imgPost" src={props.post} className={corbotao} onDoubleClick={()=>(Curtir(corbotao, setCorbotao))}/>
             <div class="interacaoPost">
                     <div class="intercaoPostEsquerda">
-                        <ion-icon  class={corBotao} onClick={() => {
-                            if(corBotao ==="like"){
-                             setCorBotao('curtido') 
-                            }else{
-                                setCorBotao('like')
-                            }}} name={corBotao =="like" ? "heart-outline":"heart"}></ion-icon>
+                        <ion-icon  class={corbotao} onClick={()=>(Curtir(corbotao, setCorbotao))} name={corbotao =="like" ? "heart-outline":"heart"}></ion-icon>
                         <ion-icon name="chatbubble-outline"></ion-icon>
                         <ion-icon  name="paper-plane-outline"></ion-icon>
                     </div>
@@ -43,6 +34,21 @@ export default function Post(){
         </div> 
         );
 };
+
+
+function Curtir(corbotao, setCorbotao){
+        if(corbotao ==="like"){
+         setCorbotao('curtido') 
+        }else{
+            setCorbotao('like')
+        }
+    }
+
+export default function Posts(){
+     return Contas.filter(props => props.post).map(props => <Post imagem={props.imagem} nome={props.nome} post={props.post}/>)
+}
+
+
 
 
 

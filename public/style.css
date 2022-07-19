@@ -144,6 +144,7 @@
     align-items: center;
     margin-left: 17px;
     margin-right: 17px;
+    margin-bottom: 14px;
     
   }
   
@@ -366,13 +367,6 @@
   height: 23px;
 }
 
-.intercaoPostEsquerda .like{
-  
-}
-
-.like{
-  
-}
 
 .curtido{
   color: red;

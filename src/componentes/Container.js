@@ -1,5 +1,5 @@
 import Stories from "./Stories"
-import Post from "./Posts"
+import Posts from "./Posts"
 import SidBar from "./SideBar"
 
 export default function Container(){
@@ -7,7 +7,7 @@ export default function Container(){
      <div class="container">
           <div class="containerEsquerda">
                <Stories/>
-               <Post/>
+               <Posts/>
           </div>
         <div class="sideBar">
           <SidBar/>
